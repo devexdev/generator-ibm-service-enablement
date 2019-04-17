@@ -21,6 +21,7 @@ branches:
   only:
   - master
   - develop
+  - devops-insights
 env:
   global:
   - DEV_BRANCH=develop 

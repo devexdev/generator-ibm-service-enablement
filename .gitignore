@@ -8,4 +8,5 @@ xunit.xml
 .project
 .vscode
 *.DS_Store
+devops_insights/
 coverage
