@@ -16,7 +16,7 @@ before_script:
 - cd -
 script: 
 - npm test && npm run coveralls && /tmp/standard-npm-devops/do_devops.sh
-- $DEVOPS_SCRIPT_DIR/do_devops_insights_reporting.sh
+- $TRAVIS_BUILD_DIR/do_devops_insights_reporting.sh
 branches:
   only:
   - master
