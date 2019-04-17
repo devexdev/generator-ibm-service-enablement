@@ -25,7 +25,7 @@ mkdir -p $DEVOPS_REPORT_DIR
 
 nyc report --reporter=cobertura --report-dir=$DEVOPS_REPORT_DIR
 if [ ! -f $TRAVIS_BUILD_DIR/xunit.xml ]; then
-	mocha --recursive --reporter mocha-multi-reporters --reporter-options configFile=config.json;
+	npm run testinsights
 fi
 
 ls
